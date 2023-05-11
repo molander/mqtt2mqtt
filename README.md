@@ -1,12 +1,10 @@
-# Mqtt To Mqtt
+# mqtt 2 mqtt
 
 ![MQTT](images/MQTT-Logo.png)
 
-<a href="https://www.buymeacoffee.com/MVg9wc2HE" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+Fully configurable mqtt to mqtt gateway.
 
-Fully configurable Mqtt to Mqtt gateway.
-
-- **Backend**: NodeJS, Express, Mqttjs, Aedes Mqtt Broker, Webpack
+- **Backend**: NodeJS, Express, mqttjs, Aedes mqtt Broker, Webpack
 - **Frontend**: Vue, [Vuetify](https://github.com/vuetifyjs/vuetify)
 
 ## Why
@@ -27,9 +25,9 @@ Note here there are some bold text **GET/SET** **from/to**. More about them in d
 
 ``` bash
 # Clone repo
-git clone https://github.com/robertsLando/
+git clone https://github.com/molander/mqtt2mqtt
 
-cd Mqtt2Mqtt
+cd mqtt2mqtt
 
 # install dependencies
 npm install
@@ -43,7 +41,7 @@ npm start
 
 ## Usage
 
-Once the app is running open the web browser to <http://localhost:8100.> Here you need to declare the Broker settings, Mqtt clients, the maps and (optionally) the values.
+Once the app is running open the web browser to <http://localhost:8100.> Here you need to declare the Broker settings, mqtt clients, the maps and (optionally) the values.
 
 ### Broker settings
 
@@ -184,7 +182,7 @@ Set of rules to use for incoming/outgoing packets. To add a new map click on the
 
 If you don't want to map all values coming from the gateway but just some values you can add the values you want here using fixed topics instead of wildecards
 
-- **Client**: The Mqtt client to connect to
+- **Client**: The mqtt client to connect to
 - **Mode**: Is this value used to *GET* updates from a gateway and forwarding them to your broker or is used to *SET* values? Check the [sketch](#why) for more info about GET and SET
 - **Custom Topic**: Enable this to change the original topic
 - **Topic**: The topic where messages come from
@@ -222,9 +220,3 @@ If you don't want to map all values coming from the gateway but just some values
 ### Map Function
 
 ![Function](images/screen_function.png)
-
-## :bowtie: Author
-
-[Daniel Lando](https://github.com/robertsLando)
-
-Support me on [Patreon](https://www.patreon.com/join/2409916) :heart:
